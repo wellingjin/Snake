@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249826F7260DCC1700A202D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249826F6260DCC1700A202D2 /* Assets.xcassets */; };
+		249826FA260DCC1700A202D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249826F8260DCC1700A202D2 /* Main.storyboard */; };
+		24982708260DCC1800A202D2 /* SnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24982707260DCC1800A202D2 /* SnakeTests.m */; };
+		24982713260DCC1800A202D2 /* SnakeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24982712260DCC1800A202D2 /* SnakeUITests.m */; };
+		24982725260DCFA900A202D2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24982724260DCFA900A202D2 /* OpenGL.framework */; };
+		24982727260DCFB500A202D2 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24982726260DCFB500A202D2 /* GLUT.framework */; };
+		24982766260DD59000A202D2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24982765260DD59000A202D2 /* main.cpp */; };
+		24982774260DD6E600A202D2 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24982773260DD6E600A202D2 /* libGLTools.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24982704260DCC1800A202D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249826E5260DCC1600A202D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249826EC260DCC1600A202D2;
+			remoteInfo = Snake;
+		};
+		2498270F260DCC1800A202D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249826E5260DCC1600A202D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249826EC260DCC1600A202D2;
+			remoteInfo = Snake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		249826ED260DCC1600A202D2 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		249826F6260DCC1700A202D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		249826F9260DCC1700A202D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		249826FB260DCC1700A202D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249826FE260DCC1700A202D2 /* Snake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snake.entitlements; sourceTree = "<group>"; };
+		24982703260DCC1800A202D2 /* SnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24982707260DCC1800A202D2 /* SnakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeTests.m; sourceTree = "<group>"; };
+		24982709260DCC1800A202D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2498270E260DCC1800A202D2 /* SnakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24982712260DCC1800A202D2 /* SnakeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeUITests.m; sourceTree = "<group>"; };
+		24982714260DCC1800A202D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24982724260DCFA900A202D2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		24982726260DCFB500A202D2 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2498274D260DD47900A202D2 /* GLBatchBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		2498274E260DD47900A202D2 /* math3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		2498274F260DD47900A202D2 /* GLTriangleBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		24982750260DD47900A202D2 /* GLBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		24982751260DD47900A202D2 /* GLMatrixStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		24982752260DD47900A202D2 /* GLFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		24982753260DD47900A202D2 /* GLFrustum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		24982754260DD47900A202D2 /* GLGeometryTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		24982755260DD47900A202D2 /* GLShaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		24982756260DD47900A202D2 /* StopWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		24982758260DD47900A202D2 /* glxew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		24982759260DD47900A202D2 /* wglew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		2498275A260DD47900A202D2 /* glew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		2498275B260DD47900A202D2 /* GLTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		24982765260DD59000A202D2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		24982773260DD6E600A202D2 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		249826EA260DCC1600A202D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24982774260DD6E600A202D2 /* libGLTools.a in Frameworks */,
+				24982727260DCFB500A202D2 /* GLUT.framework in Frameworks */,
+				24982725260DCFA900A202D2 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24982700260DCC1800A202D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498270B260DCC1800A202D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		249826E4260DCC1600A202D2 = {
+			isa = PBXGroup;
+			children = (
+				249826EF260DCC1600A202D2 /* Snake */,
+				24982706260DCC1800A202D2 /* SnakeTests */,
+				24982711260DCC1800A202D2 /* SnakeUITests */,
+				249826EE260DCC1600A202D2 /* Products */,
+				24982723260DCFA900A202D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		249826EE260DCC1600A202D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				249826ED260DCC1600A202D2 /* Snake.app */,
+				24982703260DCC1800A202D2 /* SnakeTests.xctest */,
+				2498270E260DCC1800A202D2 /* SnakeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		249826EF260DCC1600A202D2 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				24982773260DD6E600A202D2 /* libGLTools.a */,
+				2498274C260DD47900A202D2 /* include */,
+				249826F6260DCC1700A202D2 /* Assets.xcassets */,
+				249826F8260DCC1700A202D2 /* Main.storyboard */,
+				249826FB260DCC1700A202D2 /* Info.plist */,
+				249826FE260DCC1700A202D2 /* Snake.entitlements */,
+				24982765260DD59000A202D2 /* main.cpp */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+		24982706260DCC1800A202D2 /* SnakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				24982707260DCC1800A202D2 /* SnakeTests.m */,
+				24982709260DCC1800A202D2 /* Info.plist */,
+			);
+			path = SnakeTests;
+			sourceTree = "<group>";
+		};
+		24982711260DCC1800A202D2 /* SnakeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24982712260DCC1800A202D2 /* SnakeUITests.m */,
+				24982714260DCC1800A202D2 /* Info.plist */,
+			);
+			path = SnakeUITests;
+			sourceTree = "<group>";
+		};
+		24982723260DCFA900A202D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24982726260DCFB500A202D2 /* GLUT.framework */,
+				24982724260DCFA900A202D2 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2498274C260DD47900A202D2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				24982757260DD47900A202D2 /* GL */,
+				2498274D260DD47900A202D2 /* GLBatchBase.h */,
+				2498274E260DD47900A202D2 /* math3d.h */,
+				2498274F260DD47900A202D2 /* GLTriangleBatch.h */,
+				24982750260DD47900A202D2 /* GLBatch.h */,
+				24982751260DD47900A202D2 /* GLMatrixStack.h */,
+				24982752260DD47900A202D2 /* GLFrame.h */,
+				24982753260DD47900A202D2 /* GLFrustum.h */,
+				24982754260DD47900A202D2 /* GLGeometryTransform.h */,
+				24982755260DD47900A202D2 /* GLShaderManager.h */,
+				24982756260DD47900A202D2 /* StopWatch.h */,
+				2498275B260DD47900A202D2 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		24982757260DD47900A202D2 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				24982758260DD47900A202D2 /* glxew.h */,
+				24982759260DD47900A202D2 /* wglew.h */,
+				2498275A260DD47900A202D2 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		249826EC260DCC1600A202D2 /* Snake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24982717260DCC1800A202D2 /* Build configuration list for PBXNativeTarget "Snake" */;
+			buildPhases = (
+				249826E9260DCC1600A202D2 /* Sources */,
+				249826EA260DCC1600A202D2 /* Frameworks */,
+				249826EB260DCC1600A202D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snake;
+			productName = Snake;
+			productReference = 249826ED260DCC1600A202D2 /* Snake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24982702260DCC1800A202D2 /* SnakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2498271A260DCC1800A202D2 /* Build configuration list for PBXNativeTarget "SnakeTests" */;
+			buildPhases = (
+				249826FF260DCC1800A202D2 /* Sources */,
+				24982700260DCC1800A202D2 /* Frameworks */,
+				24982701260DCC1800A202D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24982705260DCC1800A202D2 /* PBXTargetDependency */,
+			);
+			name = SnakeTests;
+			productName = SnakeTests;
+			productReference = 24982703260DCC1800A202D2 /* SnakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2498270D260DCC1800A202D2 /* SnakeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2498271D260DCC1800A202D2 /* Build configuration list for PBXNativeTarget "SnakeUITests" */;
+			buildPhases = (
+				2498270A260DCC1800A202D2 /* Sources */,
+				2498270B260DCC1800A202D2 /* Frameworks */,
+				2498270C260DCC1800A202D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24982710260DCC1800A202D2 /* PBXTargetDependency */,
+			);
+			name = SnakeUITests;
+			productName = SnakeUITests;
+			productReference = 2498270E260DCC1800A202D2 /* SnakeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		249826E5260DCC1600A202D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					249826EC260DCC1600A202D2 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					24982702260DCC1800A202D2 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 249826EC260DCC1600A202D2;
+					};
+					2498270D260DCC1800A202D2 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 249826EC260DCC1600A202D2;
+					};
+				};
+			};
+			buildConfigurationList = 249826E8260DCC1600A202D2 /* Build configuration list for PBXProject "Snake" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 249826E4260DCC1600A202D2;
+			productRefGroup = 249826EE260DCC1600A202D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				249826EC260DCC1600A202D2 /* Snake */,
+				24982702260DCC1800A202D2 /* SnakeTests */,
+				2498270D260DCC1800A202D2 /* SnakeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		249826EB260DCC1600A202D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249826F7260DCC1700A202D2 /* Assets.xcassets in Resources */,
+				249826FA260DCC1700A202D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24982701260DCC1800A202D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498270C260DCC1800A202D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		249826E9260DCC1600A202D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24982766260DD59000A202D2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249826FF260DCC1800A202D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24982708260DCC1800A202D2 /* SnakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498270A260DCC1800A202D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24982713260DCC1800A202D2 /* SnakeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24982705260DCC1800A202D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 249826EC260DCC1600A202D2 /* Snake */;
+			targetProxy = 24982704260DCC1800A202D2 /* PBXContainerItemProxy */;
+		};
+		24982710260DCC1800A202D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 249826EC260DCC1600A202D2 /* Snake */;
+			targetProxy = 2498270F260DCC1800A202D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		249826F8260DCC1700A202D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249826F9260DCC1700A202D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24982715260DCC1800A202D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		24982716260DCC1800A202D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		24982718260DCC1800A202D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Snake/Snake.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 728HGSYL4K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Snake/include\"",
+					"\"$(SRCROOT)/Snake/include/GL\"",
+				);
+				INFOPLIST_FILE = Snake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Snake",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = welling.Snake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24982719260DCC1800A202D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Snake/Snake.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 728HGSYL4K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Snake/include\"",
+					"\"$(SRCROOT)/Snake/include/GL\"",
+				);
+				INFOPLIST_FILE = Snake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Snake",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = welling.Snake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2498271B260DCC1800A202D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 728HGSYL4K;
+				INFOPLIST_FILE = SnakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = welling.SnakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Contents/MacOS/Snake";
+			};
+			name = Debug;
+		};
+		2498271C260DCC1800A202D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 728HGSYL4K;
+				INFOPLIST_FILE = SnakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = welling.SnakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Contents/MacOS/Snake";
+			};
+			name = Release;
+		};
+		2498271E260DCC1800A202D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 728HGSYL4K;
+				INFOPLIST_FILE = SnakeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = welling.SnakeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Snake;
+			};
+			name = Debug;
+		};
+		2498271F260DCC1800A202D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 728HGSYL4K;
+				INFOPLIST_FILE = SnakeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = welling.SnakeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Snake;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		249826E8260DCC1600A202D2 /* Build configuration list for PBXProject "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24982715260DCC1800A202D2 /* Debug */,
+				24982716260DCC1800A202D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24982717260DCC1800A202D2 /* Build configuration list for PBXNativeTarget "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24982718260DCC1800A202D2 /* Debug */,
+				24982719260DCC1800A202D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2498271A260DCC1800A202D2 /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2498271B260DCC1800A202D2 /* Debug */,
+				2498271C260DCC1800A202D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2498271D260DCC1800A202D2 /* Build configuration list for PBXNativeTarget "SnakeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2498271E260DCC1800A202D2 /* Debug */,
+				2498271F260DCC1800A202D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 249826E5260DCC1600A202D2 /* Project object */;
+}
